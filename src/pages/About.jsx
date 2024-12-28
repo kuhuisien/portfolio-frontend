@@ -20,7 +20,7 @@ const About = () => {
       className={
         isDarkMode
           ? ""
-          : "bg-[url('/lightBackground.jpg')] bg-cover bg-center bg-no-repeat h-full w-full"
+          : "bg-[url('/lightBackground.jpg')] bg-cover bg-center bg-no-repeat w-full"
       }
     >
       <div className="flex flex-col items-center justify-center min-h-screen p-6">
