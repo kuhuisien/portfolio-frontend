@@ -6,7 +6,7 @@ const CustomCursor = () => {
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
