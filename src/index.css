@@ -22,7 +22,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   line-height: 1.5;
   @apply bg-light-50 dark:bg-dark-900 transition-colors;
 }
