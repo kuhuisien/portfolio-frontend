@@ -7,7 +7,7 @@ const ThemeToggle = () => {
 
   return (
     <div
-      className="hoverable fixed cursor-pointer bottom-6 left-6 flex items-center space-x-1"
+      className="hoverable cursor-pointer flex items-center space-x-1 m-6"
       onClick={toggleTheme}
     >
       {/* sun icon */}

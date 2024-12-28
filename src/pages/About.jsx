@@ -16,41 +16,33 @@ const About = () => {
   }, []);
 
   return (
-    <div
-      className={
-        isDarkMode
-          ? ""
-          : "bg-[url('/lightBackground.jpg')] bg-cover bg-center bg-no-repeat w-full"
-      }
-    >
-      <div className="flex flex-col items-center justify-center min-h-screen p-6">
-        <div className="text-center max-w-2xl space-y-6">
-          <motion.h1
-            className="text-4xl font-bold text-gray-800 dark:text-white"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            Hello, my name is Huisien Ku.
-          </motion.h1>
-          <motion.p
-            className="text-lg text-gray-600 dark:text-gray-300"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.2 }}
-          >
-            I am a full-stack web developer and React specialist, with{" "}
-            {yearsOfExperience} years of working experience.
-          </motion.p>
-          <motion.p
-            className="text-lg text-gray-600 dark:text-gray-300"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.4 }}
-          >
-            Feel free to take a look at my projects.
-          </motion.p>
-        </div>
+    <div className="py-32 px-6 flex flex-col items-center justify-center">
+      <div className="text-center max-w-2xl space-y-6">
+        <motion.h1
+          className="text-4xl font-bold text-gray-800 dark:text-white"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Hello, my name is Huisien Ku.
+        </motion.h1>
+        <motion.p
+          className="text-lg text-gray-600 dark:text-gray-300"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.2 }}
+        >
+          I am a full-stack web developer and React specialist, with{" "}
+          {yearsOfExperience} years of working experience.
+        </motion.p>
+        <motion.p
+          className="text-lg text-gray-600 dark:text-gray-300"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.4 }}
+        >
+          Feel free to take a look at my projects.
+        </motion.p>
       </div>
     </div>
   );

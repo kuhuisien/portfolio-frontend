@@ -6,24 +6,26 @@ import NavigationBar from "../common/components/NavigationBar";
 import ThemeToggle from "../common/components/ThemeToggle";
 import CustomCursor from "../common/components/CustomCursor";
 import ParticleBackground from "../common/components/ParticleBackground";
+import LayoutContainer from "../common/components/LayoutContainer";
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
-        <NavigationBar />
-
-        <CustomCursor />
-
         <ParticleBackground />
 
-        <Routes>
-          <Route path="/" element={<About />} />
-          {/* <Route path="/projects" element={<Projects />} />
+        <LayoutContainer>
+          <CustomCursor />
+          <NavigationBar className="row-start-1" />
+          <div className="row-start-2 overflow-x-hidden overflow-y-auto">
+            <Routes>
+              <Route path="/" element={<About />} />
+              {/* <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} /> */}
-        </Routes>
-
-        <ThemeToggle />
+            </Routes>
+          </div>
+          <ThemeToggle className="row-start-3" />
+        </LayoutContainer>
       </Router>
     </ThemeProvider>
   );
