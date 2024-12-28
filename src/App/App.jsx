@@ -17,7 +17,7 @@ function App() {
         <LayoutContainer>
           <CustomCursor />
           <NavigationBar />
-          <div className="row-start-2 overflow-x-hidden overflow-y-auto">
+          <div className="row-start-2 row-end-3 overflow-x-hidden overflow-y-auto">
             <Routes>
               <Route path="/" element={<About />} />
               {/* <Route path="/projects" element={<Projects />} />
