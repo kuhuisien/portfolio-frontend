@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
-import { useMemo } from "react";
+import { useMemo, useContext } from "react";
+import { ThemeContext } from "../common/contexts/ThemeContext";
 
 const About = () => {
+  const { isDarkMode } = useContext(ThemeContext);
+
   const yearsOfExperience = useMemo(() => {
     // start at 1st Sep 2019
     const startDate = new Date(2019, 8, 1);
@@ -13,7 +16,13 @@ const About = () => {
   }, []);
 
   return (
-    <div className="min-h-screen dark:bg-gray-900 transition-colors duration-500">
+    <div
+      className={
+        isDarkMode
+          ? ""
+          : "bg-[url('/dist/assets/lightBackground.jpg')] bg-cover bg-center bg-no-repeat h-full w-full"
+      }
+    >
       <div className="flex flex-col items-center justify-center min-h-screen p-6">
         <div className="text-center max-w-2xl space-y-6">
           <motion.h1
