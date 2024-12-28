@@ -48,7 +48,7 @@ const About = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.4 }}
           >
-            Feel free to take a look at my projects on the web portfolio page.
+            Feel free to take a look at my projects.
           </motion.p>
         </div>
       </div>

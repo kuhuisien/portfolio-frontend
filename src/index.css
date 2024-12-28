@@ -27,6 +27,50 @@ body {
   @apply bg-light-50 dark:bg-dark-900 transition-colors;
 }
 
+* {
+  cursor: arrow;
+}
+
+.dark * {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+  z-index: 9999;
+}
+
+.custom-cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-out, height 0.3s ease-out, opacity 0.3s ease-out;
+  z-index: 9998;
+}
+
+.dark .custom-cursor {
+  background-color: red;
+}
+
+.dark .custom-cursor-circle {
+  border-color: #fff;
+}
+
+@media (max-width: 600px) {
+  * {
+    cursor: default;
+  }
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
