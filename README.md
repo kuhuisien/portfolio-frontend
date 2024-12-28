@@ -4,11 +4,11 @@ This repo contains the **frontend** of the portfolio website.
 
 ## Tech Stack
 
-- React, Tailwind CSS, Framer Motion
+- React, Tailwind CSS, Javascript
 
 ## Live Demo
 
-Check out the live version of the website: [Your Demo Link Here](#)
+Check out the live version of the website: [link](https://portfolio-frontend-e5k6b9oq3-kuhuisiens-projects.vercel.app/)
 
 ## Installation
 
@@ -18,7 +18,7 @@ To run the project locally, follow these steps:
 
    ```bash
    git clone https://github.com/kuhuisien/portfolio-frontend.git
-   cd portfolio-website
+   cd portfolio-frontend
    ```
 
 2. Install dependencies:
