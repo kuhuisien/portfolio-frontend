@@ -16,7 +16,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="lg:py-28 px-6 flex flex-col items-center justify-center">
+    <div className="py-12 lg:py-28 px-6 flex flex-col items-center justify-center">
       <div className="text-center max-w-2xl space-y-6">
         <motion.h1
           className="text-4xl font-bold text-gray-800 dark:text-white"

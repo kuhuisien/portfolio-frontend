@@ -16,7 +16,7 @@ function App() {
 
         <LayoutContainer>
           <CustomCursor />
-          <NavigationBar className="row-start-1" />
+          <NavigationBar />
           <div className="row-start-2 overflow-x-hidden overflow-y-auto">
             <Routes>
               <Route path="/" element={<About />} />
@@ -24,7 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> */}
             </Routes>
           </div>
-          <ThemeToggle className="row-start-3" />
+          <ThemeToggle />
         </LayoutContainer>
       </Router>
     </ThemeProvider>
