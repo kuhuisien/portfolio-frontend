@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
-import { useMemo, useContext } from "react";
-import { ThemeContext } from "../common/contexts/ThemeContext";
+import { useMemo } from "react";
 
 const About = () => {
-  const { isDarkMode } = useContext(ThemeContext);
-
   const yearsOfExperience = useMemo(() => {
     // start at 1st Sep 2019
     const startDate = new Date(2019, 8, 1);
@@ -16,7 +13,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="pt-12 lg:py-28 px-6 flex flex-col items-center justify-center">
+    <div className="pt-12 lg:py-48 px-6 flex flex-col items-center justify-center">
       <div className="text-center max-w-2xl space-y-6">
         <motion.h1
           className="text-4xl font-bold text-gray-800 dark:text-white"

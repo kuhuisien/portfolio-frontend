@@ -7,7 +7,7 @@ const LayoutContainer = ({ children }) => {
   return (
     <div
       className={
-        "grid grid-rows-[auto_1fr_auto] h-[100vh] md:h-screen w-full" +
+        "flex flex-col h-screen " +
         (isDarkMode
           ? ""
           : "bg-[url('/lightBackground.jpg')] bg-cover bg-center bg-no-repeat")

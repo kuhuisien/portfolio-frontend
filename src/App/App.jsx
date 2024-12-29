@@ -17,13 +17,13 @@ function App() {
         <LayoutContainer>
           <CustomCursor />
           <NavigationBar />
-          <div className="row-start-2 row-end-2 overflow-x-hidden overflow-y-auto">
-            <Routes>
-              <Route path="/" element={<About />} />
-              {/* <Route path="/projects" element={<Projects />} />
+
+          <Routes>
+            <Route path="/" element={<About />} />
+            {/* <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} /> */}
-            </Routes>
-          </div>
+          </Routes>
+
           <ThemeToggle />
         </LayoutContainer>
       </Router>
