@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from "react";
-import { ThemeContext } from "../contexts/ThemeContext";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import "./CustomCursor.css";
 
 const CustomCursor = () => {
   const { isDarkMode } = useContext(ThemeContext);
