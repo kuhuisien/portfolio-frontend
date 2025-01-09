@@ -80,7 +80,7 @@ const ParticleBackground = () => {
                 enable: true,
                 area: 800,
               },
-              value: isDarkMode ? 30 : 50,
+              value: 30,
             },
             opacity: {
               value: 0.5,
