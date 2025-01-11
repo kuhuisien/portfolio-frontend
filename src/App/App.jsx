@@ -21,7 +21,7 @@ function App() {
 
           <Routes>
             {ROUTING.map(({ to, component }) => (
-              <Route path={to} element={component} />
+              <Route key={to} path={to} element={component} />
             ))}
           </Routes>
 
